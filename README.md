@@ -57,7 +57,7 @@ The portfolio includes:
 ---
 
 ## 📂 Project Structure
-
+```text
 portfolio/
 │
 ├── public/
