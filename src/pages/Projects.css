@@ -1,0 +1,202 @@
+.projects-page {
+  min-height: calc(100vh - 70px);
+  padding: 70px 80px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+
+.projects-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.projects-heading p {
+  color: #a78bfa;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.projects-heading h1 {
+  font-size: 45px;
+}
+
+
+/* Filter Buttons */
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 45px;
+}
+
+.project-filters button {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.project-filters button:hover {
+  border-color: #8b5cf6;
+  color: white;
+}
+
+.project-filters .active-filter {
+  background-color: #8b5cf6;
+  color: white;
+  border-color: #8b5cf6;
+}
+
+
+/* Projects Grid */
+
+.projects-container {
+  max-width: 1250px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+/* Project Card */
+
+.project-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  border-color: #8b5cf6;
+  transform: translateY(-5px);
+}
+
+
+/* Project Image */
+
+.project-image {
+  height: 170px;
+  background-color: #111827;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid #334155;
+}
+
+.project-image span {
+  color: #a78bfa;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Project Content */
+
+.project-content {
+  padding: 25px;
+}
+
+.project-content h2 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.project-content p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+
+/* Technologies */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.project-tech span {
+  background-color: #0f172a;
+  color: #c4b5fd;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+
+/* GitHub Button */
+
+.project-button {
+  display: inline-block;
+  background-color: #8b5cf6;
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.project-button:hover {
+  background-color: #7c3aed;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+  .projects-page {
+    padding: 60px 40px;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .projects-page {
+    padding: 50px 20px;
+  }
+
+  .projects-heading h1 {
+    font-size: 35px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-filters {
+    gap: 8px;
+  }
+
+  .project-filters button {
+    padding: 8px 14px;
+  }
+
+}

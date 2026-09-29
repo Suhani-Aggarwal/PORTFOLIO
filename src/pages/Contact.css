@@ -1,0 +1,192 @@
+.contact-page {
+  min-height: calc(100vh - 70px);
+  padding: 70px 80px;
+  box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-heading p {
+  color: #a78bfa;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.contact-heading h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.contact-heading span {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+
+/* Main Container */
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+
+/* Contact Information */
+
+.contact-info {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 35px;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-info > p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+
+/* Contact Items */
+
+.contact-item {
+  margin-bottom: 25px;
+}
+
+.contact-item h3 {
+  color: #a78bfa;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.contact-item p {
+  color: #cbd5e1;
+}
+
+.contact-item a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #a78bfa;
+}
+
+
+/* Form */
+
+.contact-form {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 35px;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #0f172a;
+  color: white;
+
+  border: 1px solid #334155;
+  border-radius: 6px;
+
+  padding: 12px;
+  margin-bottom: 20px;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #8b5cf6;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #8b5cf6;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 12px;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #7c3aed;
+}
+
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+  .contact-page {
+    padding: 60px 40px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .contact-page {
+    padding: 50px 20px;
+  }
+
+  .contact-heading h1 {
+    font-size: 35px;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 25px;
+  }
+
+}
